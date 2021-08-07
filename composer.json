@@ -1,0 +1,29 @@
+{
+    "name": "shimoning/custom-monolog",
+    "version": "0.1.0",
+    "description": "Customize monolog",
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shimon Haga",
+            "email": "shimon.haga@shimoning.com"
+        }
+    ],
+    "keywords": [
+        "Monolog",
+        "Laravel",
+        "log",
+        "filename",
+        "formatter"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shimoning\\CustomMonolog\\": "src/"
+        }
+    },
+    "require": {
+        "monolog/monolog": "^1.12|^2.0"
+    }
+}

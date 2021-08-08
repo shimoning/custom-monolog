@@ -2,8 +2,7 @@
 
 namespace Shimoning\CustomMonolog;
 
-
-use Monolog\Logger;
+use Psr\Log\LoggerInterface;
 use Monolog\Handler\RotatingFileHandler;
 
 /**
@@ -14,10 +13,10 @@ class FilenameWithSapi
     /**
      * Customize the given logger instance.
      *
-     * @param  \Illuminate\Log\Logger $logger
+     * @param  \Psr\Log\LoggerInterface $logger
      * @return void
      */
-    public function __invoke(Logger $logger)
+    public function __invoke(LoggerInterface $logger)
     {
         $sapi = php_sapi_name();
         if ($sapi === false) {

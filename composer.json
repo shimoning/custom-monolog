@@ -1,6 +1,6 @@
 {
     "name": "shimoning/custom-monolog",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Customize monolog",
     "minimum-stability": "stable",
     "type": "library",

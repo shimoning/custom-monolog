@@ -16,7 +16,6 @@ Monologのカスタマイズ集(仮)
 その後以下でインストールする。
 
 ```bash
-
 composer require shimoning/custom-monolog
 ```
 
@@ -25,7 +24,7 @@ composer require shimoning/custom-monolog
 ### ログファイル名にPHP実行ユーザ名を付与する
 #### For Laravel
 5.6系 以上なら動作するはず。
-8.5まで確認。
+10.13まで確認。
 
 `config/logging.php` のファイルにおいて、 `daily` の配列に以下の行を追加する。
 ```
